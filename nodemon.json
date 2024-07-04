@@ -1,0 +1,5 @@
+{
+  "watch": ["./"],
+  "ext": ".ts,.js",
+  "exec": "CHOKIDAR_USEPOLLING=true NODE_ENV=development  npx tsx  app.ts "
+}
