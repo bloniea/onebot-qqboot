@@ -1,7 +1,7 @@
 import { fileURLToPath, pathToFileURL } from "url"
 import path, { dirname } from "path"
 import * as glob from "glob"
-import type { IWebSocketClient } from "../ws/server"
+import type { IWebSocketClient } from "ws/server"
 export const loadAndCallPlugin = async (
   ws: IWebSocketClient
 ): Promise<void> => {

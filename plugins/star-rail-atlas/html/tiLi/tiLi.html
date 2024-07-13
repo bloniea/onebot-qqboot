@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>体力查询</title>
+    <link rel="stylesheet" href="./tiLi.css" />
+  </head>
+  <body>
+    <main id="container">
+      <div class="title">
+        uid:{{data.uid}} <span class="v">{{data.username}}</span>
+      </div>
+      <div class="content">
+        <div class="l">
+          <div class="kai-tuo-li">
+            <img src="../static/images/11.png" alt="开拓力" />
+            <div class="v">
+              <div class="t">开拓力</div>
+              <div class="t-v">
+                {{data.current_stamina}}/{{data.max_stamina}}
+              </div>
+            </div>
+          </div>
+          <div class="remaining-time">
+            <div class="t">预计恢复时间</div>
+            <div class="v">{{data.stamina_recover_time_v}}</div>
+          </div>
+          <div class="line"></div>
+          <div class="h-ktl">
+            <img src="../static/images/12.png" alt="后备开拓力" />
+            <div class="v">
+              <div class="t">后备开拓力</div>
+              <div class="t-v">{{data.current_reserve_stamina}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="r">
+          <div class="item">
+            <sapn class="t">每日实训</sapn>
+            <span class="v"
+              >{{data.current_train_score}}/{{data.max_train_score}}</span
+            >
+          </div>
+          <div class="item">
+            <sapn class="t">本周模拟积分</sapn
+            ><span class="v"
+              >{{data.current_rogue_score}}/{{data.max_rogue_score}}</span
+            >
+          </div>
+          <div class="item">
+            <sapn class="t">历战余响剩余</sapn
+            ><span class="v"
+              >{{data.weekly_cocoon_limit}}/{{data.weekly_cocoon_cnt}}</span
+            >
+          </div>
+          <div class="item">
+            <sapn class="t">额外拟合值</sapn
+            ><span class="v"
+              >{{data.rogue_tourn_weekly_cur}}/{{data.rogue_tourn_weekly_max}}</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

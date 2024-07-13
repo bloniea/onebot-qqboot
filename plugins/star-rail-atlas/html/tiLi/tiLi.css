@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Number';
+  src: url("../static/font/tttgbnumber.woff") format('woff'), url("../static/font/tttgbnumber.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'NZBZ';
+  src: url("../static/font/NZBZ.woff") format('woff'), url("../static/font/NZBZ.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'YS';
+  src: url("../static/font/HYWH-65W.woff") format('woff'), url("../static/font/HYWH-65W.ttf") format('truetype');
+}
+.font-YS {
+  font-family: Number, '汉仪文黑-65W', YS, PingFangSC-Medium, 'PingFang SC', sans-serif;
+}
+.font-NZBZ {
+  font-family: Number, '印品南征北战NZBZ体', NZBZ, '汉仪文黑-65W', YS, PingFangSC-Medium, 'PingFang SC', sans-serif;
+}
+body {
+  font-family: Number, '汉仪文黑-65W', YS, PingFangSC-Medium, 'PingFang SC', sans-serif;
+}
+html {
+  font-size: 10px;
+}
+html * {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  background: #262626;
+  width: 52rem;
+  height: 28rem;
+  border: 0.6rem solid #7053a2;
+}
+#container .title {
+  font-size: 1.8rem;
+  padding: 1rem 2rem 0rem 2rem;
+  color: #c1b9b9;
+}
+#container .title .v {
+  float: right;
+}
+#container .content {
+  color: #dad6d6;
+  margin: 1rem;
+  font-size: 1.8rem;
+  display: flex;
+}
+#container .content .l {
+  width: 22rem;
+  border-radius: 2rem;
+  background: #323232;
+  padding: 1rem;
+}
+#container .content .l .kai-tuo-li {
+  display: flex;
+}
+#container .content .l .kai-tuo-li img {
+  width: 10rem;
+  height: 10rem;
+}
+#container .content .l .kai-tuo-li .v {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#container .content .l .kai-tuo-li .v .t {
+  font-size: 1.6rem;
+}
+#container .content .l .kai-tuo-li .v .t-v {
+  font-size: 2rem;
+}
+#container .content .l .remaining-time .t {
+  font-size: 1.6rem;
+  color: #969696;
+  margin-right: 2rem;
+}
+#container .content .l .remaining-time .v {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+#container .content .l .line {
+  width: 100%;
+  height: 0.25rem;
+  background: #000;
+  margin-top: 1rem;
+}
+#container .content .l .h-ktl {
+  display: flex;
+}
+#container .content .l .h-ktl img {
+  width: 4rem;
+  height: 4rem;
+}
+#container .content .l .h-ktl .v {
+  display: flex;
+  line-height: 4rem;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+#container .content .r {
+  width: 30rem;
+  border-radius: 2rem;
+  background: #323232;
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#container .content .r .item {
+  display: flex;
+  justify-content: space-between;
+}

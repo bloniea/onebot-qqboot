@@ -1,0 +1,296 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+#player {
+  width: 900px;
+  height: 550px;
+  /* border: 1px solid red; */
+  /* background-color: #703842; */
+  color: #fff;
+  position: relative;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  display: flex;
+  background-size: 100%;
+}
+#player::before {
+  content: "";
+  background-image: url("https://images.bloniea.com/images/hsr_bg_1709128380749_948.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(10px);
+  position: absolute;
+  /* width: 100%;
+height: 100%; */
+  z-index: -1;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+}
+.juese-bg {
+  height: 100%;
+  width: 35%;
+  position: relative;
+}
+
+.juese-bg .juese-img {
+  width: 100%;
+  height: 100%;
+}
+.juese-bg .juese-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.juese-bg .user {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.content {
+  width: 65%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+.content .mz {
+  height: 100%;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content .mz .mz-item {
+  width: 40px;
+  height: 40px;
+  background-size: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .mz .mz-item .image {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+.content .mz .mz-item .image img {
+  width: 100%;
+  height: 100%;
+}
+.content .mz .mz-item .mask {
+  position: absolute;
+  width: 65px;
+  height: 63px;
+  background-image: url("{{hsrUrl}}/const-bg.png");
+  background-size: 100%;
+}
+.content .jueSeShuXing .title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.content .jueSeShuXing .sub-title {
+  display: flex;
+}
+.content .jueSeShuXing .sub-title div {
+  margin-right: 10px;
+}
+.content .jueSeShuXing .sub-title .sub-icon {
+  width: 24px;
+  height: 24px;
+}
+.content .jueSeShuXing .sub-title .sub-icon img {
+  width: 100%;
+  height: 100%;
+}
+.content .jueSeShuXing {
+  width: 280px;
+}
+.content .jueSeShuXing .gz {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.content .jueSeShuXing .gz .t,
+.content .jueSeShuXing .gz .b {
+  display: flex;
+}
+.content .jueSeShuXing .gz .gz-title {
+  position: relative;
+  padding-left: 6px;
+}
+.content .jueSeShuXing .gz .gz-title::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #b069ee;
+}
+.content .jueSeShuXing .gz-image {
+  width: 130px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .jueSeShuXing .gz-image .gz-image-box {
+  width: 100px;
+  height: 150px;
+}
+
+.content .jueSeShuXing .gz-image .gz-image-box1,
+.content .jueSeShuXing .gz-image .gz-image-box2 {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  border: 1px solid #b069ee;
+}
+.content .jueSeShuXing .gz-image .gz-image-box1 {
+  /* left: 0px; */
+  left: 10px;
+  top: 10px;
+
+  /* clip-path: polygon(
+  0 10%,
+  10% 0,
+  90% 0,
+  100% 10%,
+  100% 90%,
+  90% 100%,
+  10% 100%,
+  0 90%
+); */
+}
+.content .jueSeShuXing .gz-image .gz-image-box2 {
+  left: 18px;
+  top: 18px;
+}
+.content .jueSeShuXing .gz-image img {
+  width: 100%;
+}
+.content .jueSeShuXing .gz .gz-shuxing {
+  margin-left: 10px;
+  position: relative;
+}
+.content .jueSeShuXing .gz .gz-shuxing .gz-shuzhi {
+  position: absolute;
+}
+.content .jueSeShuXing .gz .gz-shuxing .gz-shuzhi-item {
+  padding: 4px 6px 4px 22px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
+.content .jueSeShuXing .gz .gz-shuxing .gz-shuzhi-item::before {
+  content: "";
+  position: absolute;
+  /* background-color: #b069ee; */
+
+  background-image: url("./images/IconAttack.png");
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+.content .jueSeShuXing .gz .gz-desc article {
+  font-size: 14px;
+}
+
+.content .juSeShuZhi .juSeShuZhi-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 10px;
+  width: 240px;
+  /* justify-content: space-between; */
+}
+.content .juSeShuZhi .juSeShuZhi-item .start {
+  position: relative;
+  padding-left: 20px;
+}
+.content .juSeShuZhi .juSeShuZhi-item .start::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+
+  background-size: 100%;
+}
+.content .juSeShuZhi .juSeShuZhi-item .hp::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconMaxHP.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .gjl::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconAttack.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .fyl::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconDefence.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .sd::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconSpeed.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .bjl::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconCriticalChance.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .bs::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconCriticalDamage.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .jptg::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconBreakUp.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .nlhfl::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconEnergyRecovery.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .xgmz::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconStatusProbability.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .xgdk::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconStatusResistance.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .shjc::before {
+  background-image: url("{{hsrUrl}}/spriteoutput/ui/avatar/icon/IconBreakUp.png");
+}
+.content .juSeShuZhi .juSeShuZhi-item .fgx {
+  margin: 0 4px;
+  flex-grow: 1;
+  height: 1px;
+  border-top: 1px solid #7c7a7a;
+}
+
+.content .juSeShuZhi .juSeShuZhi-item .end {
+  /* width: 50px; */
+  position: relative;
+  /* border: 1px solid yellow; */
+}
+.content .juSeShuZhi .juSeShuZhi-item .end .end-m {
+  font-size: 12px;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: flex;
+}
+.main-color {
+  color: #b069ee;
+}
+.green-color {
+  color: #08b852;
+}

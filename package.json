@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/md5": "^2.3.5",
     "@types/node": "^20.14.9",
     "@types/ws": "^8.5.10",
     "glob": "^10.4.2",
@@ -19,9 +21,14 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "art-template": "^4.13.2",
     "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
     "js-yaml": "^4.1.0",
+    "md5": "^2.3.0",
+    "node-fetch-retry": "^2.0.1",
     "nodemon": "^3.1.4",
+    "puppeteer": "^22.12.1",
     "ws": "7.5.10"
   },
   "type": "module"

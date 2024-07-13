@@ -7,7 +7,9 @@
     "rootDir": "./",
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]
+      "*": ["node_modules/*"],
+      "ws/*": ["ws/*"],
+      "http/*": ["http/*"]
     },
     "esModuleInterop": true,
     "strict": true,
@@ -19,6 +21,12 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["./*/**.ts", "app.ts", "./plugins/*/index.ts"],
+  "include": [
+    "./*/**.ts",
+    "./*/**.d.ts",
+    "app.ts",
+    "./plugins/*/index.ts",
+    "./plugins/*/*.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

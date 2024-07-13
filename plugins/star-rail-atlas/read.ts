@@ -3,7 +3,7 @@ import { dirname, join } from "path"
 import { fileURLToPath } from "url"
 
 import yaml from "js-yaml"
-import { Config } from "src"
+import { Config } from "./config"
 
 const ___filename = fileURLToPath(import.meta.url)
 const ___dirname = dirname(___filename)
@@ -61,7 +61,7 @@ export const pathJson = async (
   config: Config
 ): Promise<starRailPath | undefined> => {
   return await readJsonOrYamlFile<starRailPath>(
-    "../" + config["atlas path"] + "/path.json"
+    "./" + config.altasPath + "/path.json"
   )
 }
 interface OthernameJson {
@@ -72,13 +72,13 @@ export const othernameData = async (
   config: Config
 ): Promise<{ [key: string]: string[] }> => {
   const filePaths = [
-    { name: "enemy", path: `../${config["atlas path"]}/othername/enemy.yaml` },
+    { name: "enemy", path: `./${config.altasPath}/othername/enemy.yaml` },
     {
       name: "lightcone",
-      path: `../${config["atlas path"]}/othername/lightcone.yaml`,
+      path: `./${config.altasPath}/othername/lightcone.yaml`
     },
-    { name: "relic", path: `../${config["atlas path"]}/othername/relic.yaml` },
-    { name: "role", path: `../${config["atlas path"]}/othername/role.yaml` },
+    { name: "relic", path: `./${config.altasPath}/othername/relic.yaml` },
+    { name: "role", path: `./${config.altasPath}/othername/role.yaml` }
   ]
   try {
     const results = await Promise.all(
